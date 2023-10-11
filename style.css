@@ -1,0 +1,164 @@
+body{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../movies.jpg');
+}
+#home-page .jumbotron{
+    color:#fff;
+}
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+nav .navbar-brand{
+    color:white;
+    font-family: 'Bangers', cursive;
+}
+nav .navbar-brand:hover{
+    color:gray;
+}
+nav ul li a i{
+    margin-right: 2px;
+}
+.float-right{
+    float:right;
+}
+input{
+    border: 2px solid;
+    border-radius: 8px;
+}
+.form-container button{
+    background-color: rgb(248,249,250);
+    height:45px;
+    width: 45px;
+    border: none;
+    border-radius: 50%;
+    transition:0.2s;
+}
+.form-container button:hover{
+    background-color: grey;
+    border-radius: 50%;
+    transition:0.2s;
+}
+.search_bar{
+    width:150px;
+    height:45px;
+    transition: width 1s;
+}
+.search_bar:hover{
+    width:300px;
+}
+.navbar-nav li{
+    padding-left: 5px;
+    padding-right:35px;
+}
+.imgdivwrap{
+    position:relative;
+}
+.overlay {
+    position: absolute;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+.imgdivwrap:hover .overlay {
+    opacity: 1;
+}
+@media (max-width:326px){
+    .search_bar{
+        width:100px;
+        height:35px;
+        transition: width 1s;
+    }
+    .search_bar:hover{
+        width:125px;
+    }
+    #search_button{
+        width:35px;
+        height:35px;
+    }
+}
+@media (min-width:327px) and (max-width:375px){
+    .search_bar{
+        width:150px;
+        transition: width 1s;
+    }
+    .search_bar:hover{
+        width:175px;
+    }
+}
+@media (min-width:376px) and (max-width:576px){
+    .navbar-brand{
+        float: left;
+    }
+    .search_bar{
+        width:150px;
+        height:45px;
+        transition: width 1s;
+    }
+    .search_bar:hover{
+        width:175px;
+    }
+    .movies{
+        display: flex; /* This makes the container a flex container */
+        align-items: center; /* This centers the items (including the image) vertically within the container */
+        justify-content: center; /* This centers the items (including the image) horizontally within the container */
+        margin-left:23px;
+    }
+}
+@media (min-width:580px)  and (max-width:768px){
+    .search_bar{
+        width:150px;
+        height:45px;
+        transition: width 1s;
+    }
+    .search_bar:hover{
+        width:350px;
+    }
+    .imgdivwrap{
+        display: block;
+        padding-right:200px;
+        position: relative;
+        float:none;
+    }
+    .movies{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+@media (min-width:769px)  and (max-width:1024px){
+    .search_bar{
+        width:150px;
+        height:45px;
+    }
+    .search_bar:hover{
+        width:150px;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px){
+    .search_bar{
+        width:150px;
+        height:45px;
+        transition: width 1s;
+    }
+    .search_bar:hover{
+        width:300px;
+    }
+}
